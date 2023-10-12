@@ -53,4 +53,4 @@ while (cont != (serie - 1)):
 
 print(f"{num + inc}-{serie}")
 
-#foishadnfosd
+#foishadnfodsdd
