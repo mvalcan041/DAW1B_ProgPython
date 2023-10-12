@@ -18,4 +18,4 @@ while cont <= 10:
 media = media / total
 print(f"La media es {media}.")
 
-# Sin acabar.
+# No sabía acabarlo.
