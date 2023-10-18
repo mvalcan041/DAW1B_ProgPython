@@ -3,15 +3,14 @@ x = int(input("Indique un número:\n"))
 y = int(input("Indique otro número:\n"))
 
 if x >= y:
-    numIni = x - 1
-    numFin = y
-else:
-    numIni = y - 1
+    numIni = y
     numFin = x
+else:
+    numIni = x
+    numFin = y
 
-for i in (numIni, numFin):
-    print(f"{i} +")
+while (numIni <= numFin):
+    print(numIni, end= "")    # end= "" para evitar saltar de línea con cada print
     if (numIni != numFin):
-        print(f"-")
-
-# Está mal en su pseudocódigo.
+        print("-", end= "")
+    numIni = numIni + 1
