@@ -1,13 +1,22 @@
 
-def suma(num1, num2):
-    return num1 + num2
+# "Práctica 1.10"
 
-print(suma(3, 2))
-print("La suma de", 3, "+", 2, "es", suma(3, 2))
-print("La suma de " + str(3) + " + " + str(2) + " es " + str(suma(3, 2)))
-res = "La suma de "
-res += str(3)
-res += " + " + str(2)
-res += " es " + str(suma(3, 2))
-print(res)
-print(f"La suma de {3} + {2} es {suma(3, 2)}")
+def comparacion (num1, num2):
+    if num1 == num2:
+        num_mayor = 0
+        return num_mayor
+    elif num1 > num2:
+        num_mayor = num1
+        return num_mayor
+    else:
+        num_mayor = num2
+        return num_mayor
+    
+def main():
+    num1 = int(input(f"Dime un número: "))
+    num2 = int(input(f"Dime otro número: "))
+
+    print(f"El número mayor es {comparacion(num1, num2)}.")
+
+if __name__ == "__main__":
+    main()

@@ -1,22 +1,24 @@
 
-from prueba1 import suma
+# Pytest "Práctica 1.10"
+
+from prueba1 import comparacion
 import pytest
 
-def test_suma():
-    assert suma(1, 1) == 2
-    assert suma(0, 0) == 0
-    assert suma(100, -100) == 0
+def test_comparacion():
+    assert comparacion(1, 1) == 0
+    assert comparacion(0, 1) == 1
+    assert comparacion(100, -100) == 100
 
 @pytest.mark.parametrize(
     "input_n1, input_n2, expected",
     [
-      (1, 1, 2),
-      (0, 0, 0),
-      (100, -100, 0),
-      (-15, -1, -16),
-      (-3, 8, 5),
-      (9, suma(-1, -2), 6)
+      (1, 1, 0),
+      (1, 0, 1),
+      (100, -100, 100),
+      (-15, -1, -1),
+      (-3, 8, 8),
+      (9, 354, 354)
     ]
   )
-def test_suma_params(input_n1, input_n2, expected):
-    assert suma(input_n1, input_n2) == expected
+def test_comparacion_params(input_n1, input_n2, expected):
+    assert comparacion(input_n1, input_n2) == expected
