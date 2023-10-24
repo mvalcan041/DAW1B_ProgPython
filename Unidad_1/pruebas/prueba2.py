@@ -9,8 +9,12 @@ def comparacion (num1, num2):
     else:
         num_mayor = num2
         return num_mayor
+    
+def main():
+    num1 = int(input(f"Dime un número: "))
+    num2 = int(input(f"Dime otro número: "))
 
-num1 = int(input(f"Dime un número: "))
-num2 = int(input(f"Dime otro número: "))
+    print(f"El número mayor es {comparacion(num1, num2)}.")
 
-print(f"El número mayor es {comparacion(num1, num2)}.")
+if __name__ == "__main__":
+    main()
