@@ -1,7 +1,7 @@
 
 # Pytest "Ejercicio 2.1.1"
 
-from src.e2_1_1 import edad
+from e2_1_1 import edad
 import pytest
 
 def test_comparacion():

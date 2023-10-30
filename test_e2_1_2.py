@@ -1,7 +1,7 @@
 
 # Pytest "Ejercicio 2.1.2"
 
-from src.e2_1_2 import pswdTrue
+from e2_1_2 import pswdTrue
 import pytest
 
 def test_pswdTrue():
